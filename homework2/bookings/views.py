@@ -27,10 +27,10 @@ def ensure_demo_data():
         return
 
     movie = Movie.objects.create(
-        title='Nightmare before Christmas',
-        description='A thief who steals secrets through dreams is given a final mission.',
-        release_date='2010-07-16',
-        duration=148,
+        title='The Nightmare Before Christmas',
+        description='Jack Skellington, the Pumpkin King of Halloween Town, discovers Christmas Town and tries to take over Christmas.',
+        release_date='1993-10-13',
+        duration=76,
     )
     for seat_number in ['A1', 'A2', 'A3', 'B1', 'B2', 'B3', 'C1', 'C2', 'C3']:
         Seat.objects.create(seat_number=seat_number, booking_status=False)
